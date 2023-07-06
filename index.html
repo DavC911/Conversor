@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Conversor</title>
+    <link rel="shortcut icon" href="/img/icon-c.png">
+</head>
+<body style="background-image: url(https://wallpaperaccess.com/full/6231389.jpg);">
+    
+    
+    <div class="container">
+        
+        <div class="position-absolute top-50 start-50 translate-middle p-5 rounded-3" style="background-color: aquamarine;">
+            <div class="row text-center p-4">
+                <h1>CONVERSOR DE MEDIDAS</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number" aria-label=".form-control-lg example" placeholder="Temperatura" id="temp1">
+                </div>
+                <div class="col">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="temp">
+                        <option value="0" selected>ºC a ºF</option>
+                        <option value="1">ºF a ºC</option>
+                        <option value="2">K a ºC </option>
+                        <option value="3">ºC a K</option>
+                        <option value="4">ºF a K</option>
+                        <option value="5">K a ºF</option>
+                        
+                    </select>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number"  aria-label=".form-control-lg example" placeholder="Resultado" id="temp2" disabled>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number"  aria-label=".form-control-lg example" placeholder="Distancia" id="dist1">
+                </div>
+                <div class="col">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="dist">
+                        <option value="0">Metros a Pies</option>
+                        <option value="1">Pies a Metros</option>
+                        <option value="2">Km a M</option>
+                        <option value="3">M a Km</option>
+                        <option value="4">Cm a M</option>
+                        <option value="5">M a Cm</option>
+                        <option value="6">Cm a Mm</option>
+                        <option value="7">Mm a Cm</option>
+
+                        
+                    </select>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number"  aria-label=".form-control-lg example" id="dist2" placeholder="Resultado" disabled>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number"  aria-label=".form-control-lg example" id="peso1" placeholder="Peso">
+                </div>
+                <div class="col">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="peso">
+                        <option value="0">Kg a Lb</option>
+                        <option value="1">Lb a Kg</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number"  aria-label=".form-control-lg example" id="peso2" placeholder="Resultado" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="conversor.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
